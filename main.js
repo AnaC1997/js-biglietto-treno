@@ -1,4 +1,4 @@
-const numeroKilometri = parseInt(prompt("Inserisci il numero di chilometri che vuoi percorrere: esempio 1k"));
+const numeroKilometri = parseInt(prompt("Inserisci il numero di chilometri che vuoi percorrere"));
 const eta = parseInt(prompt("Inserisci la tua età"));
 
 console.log("numeroKilometri", numeroKilometri);
@@ -11,7 +11,7 @@ const sconto40 = 0.40;
 
 if (Number.isFinite(numeroKilometri) && Number.isFinite(eta)){
 
-    if (eta <= 17) {
+if (eta <= 17) {
     console.log(costoTotale - costoTotale * sconto20); // Sconto del 20%
     document.getElementById("messagge").innerHTML = "Il costo del biglietto è: " + (costoTotale - costoTotale * sconto20).toFixed(2) + "€";
 
